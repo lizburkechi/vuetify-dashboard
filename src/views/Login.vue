@@ -1,14 +1,11 @@
 <template>
   <v-card width="400" class="mx-auto mt-5">
-    <v-card-title class="pb-0">
+    <v-card-title>
       <h1 class="display-1">Login</h1>
     </v-card-title>
     <v-card-text>
       <v-form>
-        <v-text-field 
-        label="Username" 
-        prepend-icon="mdi-account-circle" 
-        />
+        <v-text-field label="Username" prepend-icon="mdi-account-circle" />
         <v-text-field
           :type="showPassword ? 'text' : 'password'"
           label="Password"
@@ -29,15 +26,13 @@
 
 <script>
 export default {
-    name: 'LoginPage',
-    data () {
-        return {
-            showPassword: false,
-        }
-    }
+  name: "LoginPage",
+  data() {
+    return {
+      showPassword: false,
+    };
+  },
 };
 </script>
 
-<style>
-
-</style>
+<style></style>

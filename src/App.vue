@@ -4,13 +4,13 @@
 			<v-toolbar-title>Vuetify Dashboard</v-toolbar-title>
 			<v-spacer></v-spacer>
 			<v-btn
-			v-for="link in links"
-			:key="`${link.label}-header-link`"
-			text 
-			rounded 
-			:to="link.url"
+				v-for="link in links"
+				:key="`${link.label}-header-link`"
+				text
+				rounded
+				:to="link.url"
 			>
-			{{link.label}}
+				{{ link.label }}
 			</v-btn>
 		</v-app-bar>
 		<v-content>
